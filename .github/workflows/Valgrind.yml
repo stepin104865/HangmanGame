@@ -2,9 +2,9 @@ name: Valgrind
 
 on: 
  push:
-    branches: [ main ]
+    branches: [ master ]
  pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
  
 jobs:
@@ -21,4 +21,4 @@ jobs:
     - name: make test
       run: |
         make test -C 3_Implementation/
-        valgrind ./3_Implementation/hangman.out
+        valgrind ./3_Implementation/built/Test_hangman.out
