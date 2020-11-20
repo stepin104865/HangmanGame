@@ -20,5 +20,5 @@ jobs:
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make all
       run: |
-        make test -C 3_Implementation/
+        make all -C 3_Implementation/
         valgrind ./3_Implementation/build/Test_hangman.out
