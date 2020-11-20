@@ -3,10 +3,9 @@ on:[push]
   
  jobs:
   build:
-
+    name: c/c++ CI
     runs-on: ubuntu-latest
-
-    steps:
+     steps:
     - uses: actions/checkout@v2
       
     - name: make all
