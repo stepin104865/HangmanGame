@@ -21,4 +21,4 @@ jobs:
     - name: make test
       run: |
         make test -C 3_Implementation/
-        valgrind ./3_Implementation
+        valgrind ./3_Implementation/hangman.out
